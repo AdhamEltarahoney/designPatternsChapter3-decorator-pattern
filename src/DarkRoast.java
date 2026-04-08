@@ -1,13 +1,10 @@
 public class DarkRoast extends Beverage {
-  DarkRoast() {
-    description = "Dark Roast Coffee";
+  public DarkRoast() {
+    description = "Espresso";
   }
 
-  private static final float DarkRoastCost = 9.99f;
-
   @Override
-  public float cost() {
-    float initialCost = super.cost();
-    return initialCost + DarkRoastCost;
+  public double cost() {
+    return 1.99;
   }
 }
